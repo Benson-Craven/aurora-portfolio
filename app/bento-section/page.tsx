@@ -88,7 +88,7 @@ const HeaderBlock = () => {
         alt='avatar'
       />
       <h1 className='mb-12 text-4xl font-medium leading-tight'>
-        Hi, I'm Benson.{' '}
+        Hi, I&apos;m Benson.{' '}
         <span className='text-zinc-400'>
           I build cool websites like this one.
         </span>
