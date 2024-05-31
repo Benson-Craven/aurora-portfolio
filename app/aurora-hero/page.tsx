@@ -98,7 +98,7 @@ const AuroraHero = () => {
 
         <footer className='min-w-screen mt-36 p-4  '>
           <div className='container hover:cursor-pointer mx-auto text-center text-gray-400'>
-            <p>&copy; {year} Your Company. All rights reserved.</p>
+            <p>&copy; {year} Code by Benson. All rights reserved.</p>
             <div className='flex justify-center space-x-4 mt-4'>
               <a href='#' className='hover:text-white hover:cursor-pointer'>
                 Privacy Policy
