@@ -59,58 +59,61 @@ const MissionSection = () => {
 
         {/* Product Cards Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          {/* Card 1: Authentication */}
           <CardSpotlight className='h-96 w-96'>
             <p className='text-xl font-bold relative z-20 mt-2 text-white'>
-              Authentication steps
+              Secure Authentication
             </p>
             <div className='text-neutral-200 mt-4 relative z-20'>
-              Follow these steps to secure your account:
-              <ul className='list-none  mt-2'>
+              Protect your account with a secure and seamless sign-in process:
+              <ul className='list-none mt-2'>
                 <Step title='Enter your email address' />
-                <Step title='Create a strong password' />
-                <Step title='Set up two-factor authentication' />
-                <Step title='Verify your identity' />
+                <Step title='Create a unique password' />
+                <Step title='Enable two-factor authentication' />
+                <Step title='Complete identity verification' />
               </ul>
             </div>
             <p className='text-neutral-300 mt-4 relative z-20 text-sm'>
-              Ensuring your account is properly secured helps protect your
-              personal information and data.
+              Your data security is our top priority. Follow these steps to
+              ensure complete protection.
             </p>
           </CardSpotlight>
+
+          {/* Card 2: Analytics */}
           <CardSpotlight className='h-96 w-96'>
             <p className='text-xl font-bold relative z-20 mt-2 text-white'>
-              Authentication steps
+              Advanced Analytics
             </p>
             <div className='text-neutral-200 mt-4 relative z-20'>
-              Follow these steps to secure your account:
-              <ul className='list-none  mt-2'>
-                <Step title='Enter your email address' />
-                <Step title='Create a strong password' />
-                <Step title='Set up two-factor authentication' />
-                <Step title='Verify your identity' />
+              Gain insights to optimize your performance:
+              <ul className='list-none mt-2'>
+                <Step title='Track real-time data' />
+                <Step title='Monitor key metrics' />
+                <Step title='Analyze customer behavior' />
+                <Step title='Generate actionable reports' />
               </ul>
             </div>
             <p className='text-neutral-300 mt-4 relative z-20 text-sm'>
-              Ensuring your account is properly secured helps protect your
-              personal information and data.
+              Make informed decisions using our robust analytics dashboard.
             </p>
           </CardSpotlight>
+
+          {/* Card 3: Customer Support */}
           <CardSpotlight className='h-96 w-96'>
             <p className='text-xl font-bold relative z-20 mt-2 text-white'>
-              Authentication steps
+              24/7 Customer Support
             </p>
             <div className='text-neutral-200 mt-4 relative z-20'>
-              Follow these steps to secure your account:
-              <ul className='list-none  mt-2'>
-                <Step title='Enter your email address' />
-                <Step title='Create a strong password' />
-                <Step title='Set up two-factor authentication' />
-                <Step title='Verify your identity' />
+              Get assistance anytime, anywhere:
+              <ul className='list-none mt-2'>
+                <Step title='Chat with support agents' />
+                <Step title='Access a comprehensive help center' />
+                <Step title='Resolve issues instantly' />
+                <Step title='Receive personalized solutions' />
               </ul>
             </div>
             <p className='text-neutral-300 mt-4 relative z-20 text-sm'>
-              Ensuring your account is properly secured helps protect your
-              personal information and data.
+              We're here to ensure your experience is seamless and hassle-free.
             </p>
           </CardSpotlight>
         </div>

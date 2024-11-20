@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 import { IconHome, IconMessage, IconUser } from '@tabler/icons-react'
+import { SparklesPreview } from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,7 @@ const navItems = [
     icon: <IconHome className='h-4 w-4 text-neutral-500 dark:text-white' />,
   },
   {
-    name: 'About',
+    name: 'Our Mission',
     link: '/about',
     icon: <IconUser className='h-4 w-4 text-neutral-500 dark:text-white' />,
   },
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className='bg-black scroll-smooth'>
         <Navbar navItems={navItems} />
         {children}
+        <SparklesPreview />
       </body>
     </html>
   )

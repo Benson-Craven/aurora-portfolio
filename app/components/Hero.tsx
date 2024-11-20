@@ -3,9 +3,44 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const AnimatedBar = () => {
-  const bars = [...Array(25)] // Array for the bars
+const Navbar = () => {
+  return (
+    <nav className='w-full bg-black py-4 tracking-tight'>
+      <div className='max-w-7xl mx-auto px-8 flex justify-between items-center'>
+        <div className='text-emerald-300 font-medium text-lg'>NexaFlow</div>
+        <ul className='flex space-x-8'>
+          <li>
+            <a
+              href='#'
+              className='text-gray-300 hover:text-white text-sm transition-colors'
+            >
+              Our Mission
+            </a>
+          </li>
+          <li>
+            <a
+              href='#'
+              className='text-gray-300 hover:text-white text-sm transition-colors'
+            >
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              href='#'
+              className='text-gray-300 hover:text-white text-sm transition-colors'
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  )
+}
 
+const AnimatedBar = () => {
+  const bars = [...Array(25)]
   return (
     <div className='w-full h-20 relative overflow-hidden bg-black'>
       <div className='absolute inset-0 flex'>
@@ -14,11 +49,11 @@ const AnimatedBar = () => {
             key={i}
             className='w-1 h-full bg-emerald-300'
             style={{ marginRight: '2px' }}
-            initial={{ opacity: 0, scaleY: 0 }} // Start invisible and scaled down
-            animate={{ opacity: 1, scaleY: 1 }} // Fully visible and scaled up
+            initial={{ opacity: 0, scaleY: 0 }}
+            animate={{ opacity: 1, scaleY: 1 }}
             transition={{
-              duration: 0.2, // Animation duration for each bar
-              delay: i * 0.05, // Sequential delay for loading effect
+              duration: 0.2,
+              delay: i * 0.05,
             }}
           />
         ))}
@@ -28,9 +63,14 @@ const AnimatedBar = () => {
 }
 
 const LandingPage = () => {
+  const scrollToNext = () => {
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
+  }
   return (
-    <div className='min-h-screen bg-black text-white p-8 flex flex-col justify-end'>
-      <div className='max-w-7xl mx-auto'>
+    <div className='min-h-screen bg-black text-white flex flex-col justify-between'>
+      <Navbar />
+
+      <div className='mx-auto p-8'>
         <div className='grid grid-cols-3 gap-8 mb-16'>
           <div className='flex flex-col space-y-4'>
             <div className='text-sm font-mono'>ST/00</div>
@@ -50,7 +90,10 @@ const LandingPage = () => {
 
         <div className='flex justify-between items-center border-t border-gray-800 pt-4 mb-16'>
           <div className='text-sm text-gray-500'>©2024</div>
-          <button className='text-sm text-gray-300 hover:text-white transition-colors'>
+          <button
+            onClick={scrollToNext}
+            className='text-sm text-gray-300 hover:text-white transition-colors'
+          >
             Discover ↓
           </button>
         </div>

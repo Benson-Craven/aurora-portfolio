@@ -13,7 +13,7 @@ export default function Home() {
       <GlobeDemo />
       {/* <BentoSection /> */}
       {/* <HorizontalScroll /> */}
-      <AuroraHero />
+      {/* <AuroraHero /> */}
     </main>
   )
 }
