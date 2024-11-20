@@ -113,7 +113,8 @@ const MissionSection = () => {
               </ul>
             </div>
             <p className='text-neutral-300 mt-4 relative z-20 text-sm'>
-              We're here to ensure your experience is seamless and hassle-free.
+              We&apos;re here to ensure your experience is seamless and
+              hassle-free.
             </p>
           </CardSpotlight>
         </div>
