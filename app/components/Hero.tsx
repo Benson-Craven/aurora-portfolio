@@ -40,7 +40,8 @@ const Navbar = () => {
 }
 
 const AnimatedBar = () => {
-  const bars = [...Array(25)]
+  const bars = [...Array(20)]
+
   return (
     <div className='w-full h-20 relative overflow-hidden bg-black'>
       <div className='absolute inset-0 flex'>
@@ -50,10 +51,13 @@ const AnimatedBar = () => {
             className='w-1 h-full bg-emerald-300'
             style={{ marginRight: '2px' }}
             initial={{ opacity: 0, scaleY: 0 }}
-            animate={{ opacity: 1, scaleY: 1 }}
+            animate={{ opacity: 1, scaleY: [1, 0.5, 1] }}
             transition={{
-              duration: 0.2,
-              delay: i * 0.05,
+              duration: 1.5,
+              delay: i * 0.1,
+              repeat: Infinity,
+              repeatType: 'mirror',
+              ease: 'easeInOut',
             }}
           />
         ))}
@@ -75,16 +79,6 @@ const LandingPage = () => {
           <div className='flex flex-col space-y-4'>
             <div className='text-sm font-mono'>ST/00</div>
             <AnimatedBar />
-          </div>
-
-          <div className='flex flex-col space-y-4'>
-            <div className='text-emerald-300 text-sm font-mono'>01. DATA</div>
-            <div className='w-px h-20 bg-emerald-300/20' />
-          </div>
-
-          <div className='flex flex-col space-y-4'>
-            <div className='text-emerald-300 text-sm font-mono'>02. TRUST</div>
-            <div className='w-px h-20 bg-emerald-300/20' />
           </div>
         </div>
 
