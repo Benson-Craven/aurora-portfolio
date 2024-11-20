@@ -14,7 +14,7 @@ const colours = ['#13FFAA', '#1E67C6', '#CE84CF', '#DD335C']
 
 const AuroraHero = () => {
   const colour = useMotionValue(colours[0])
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 60%, ${colour})`
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, black 60%, ${colour})`
   const border = useMotionTemplate`1px solid ${colour}`
   const boxShadow = useMotionTemplate`0px 4px 24px ${colour}`
 
@@ -38,7 +38,7 @@ const AuroraHero = () => {
         style={{
           backgroundImage,
         }}
-        className='relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200'
+        className='relative h-screen w-screen bg-black overflow-hidden'
       >
         <motion.div
           initial={{
@@ -55,12 +55,12 @@ const AuroraHero = () => {
           transition={{
             duration: 1.5,
           }}
-          className='relative z-10 flex flex-col items-center'
+          className='relative z-10 flex flex-col items-center justify-center'
         >
-          <h1 className='max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight'>
+          <h1 className='max-w-3xl text-center text-3xl font-medium leading-tight text-white sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight'>
             Decrease your SaaS overflow by over 90%
           </h1>
-          <p className='my-6 max-w-xl text-center text-base md:text-lg md:leading-relaxed'>
+          <p className='my-6 max-w-xl text-center text-base md:text-lg md:leading-relaxed text-white'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             aperiam inventore nostrum rerum alias magnam unde.
           </p>
@@ -75,7 +75,7 @@ const AuroraHero = () => {
               border: border,
               boxShadow: boxShadow,
             }}
-            className='group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50'
+            className='group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-white transition-colors hover:bg-gray-950/50'
           >
             Start Free Trial
             <FiArrowRight className='transition-transform group-hover:-rotate-45 group-active:-rotate-12' />
@@ -96,7 +96,7 @@ const AuroraHero = () => {
           </Canvas>
         </div>
 
-        <footer className='min-w-screen mt-36 p-4  '>
+        <footer className='min-w-screen mt-36 p-4 '>
           <div className='container hover:cursor-pointer mx-auto text-center text-gray-400'>
             <p>&copy; {year} Code by Benson. All rights reserved.</p>
             <div className='flex justify-center space-x-4 mt-4'>

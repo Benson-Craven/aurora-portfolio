@@ -20,7 +20,7 @@ import {
 
 const BentoSection = () => {
   return (
-    <div className='bg-[#020617] min-h-screen px-4 py-12 text-zinc-50'>
+    <div className=' min-h-screen px-4 py-12 text-zinc-50'>
       <motion.div
         initial='initial'
         animate='animate'

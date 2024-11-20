@@ -1,14 +1,18 @@
-import AuroraHero from './aurora-hero/page'
-import BentoSection from './bento-section/page'
-import HorizontalScroll from './horizontal-scroll-section/page'
-import LandingHero from './landing-hero/page'
+import AuroraHero from './components/Stars'
+import BentoSection from './components/Bento'
+import HorizontalScroll from './components/Carousel'
+import LandingHero from './components/Hero'
+import MissionSection from './components/Mission'
+import { GlobeDemo } from './components/GlobeSection'
 
 export default function Home() {
   return (
     <main>
       <LandingHero />
-      <BentoSection />
-      <HorizontalScroll />
+      <MissionSection />
+      <GlobeDemo />
+      {/* <BentoSection /> */}
+      {/* <HorizontalScroll /> */}
       <AuroraHero />
     </main>
   )
