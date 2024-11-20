@@ -60,7 +60,7 @@ const LandingPage = () => {
         </h1>
 
         <h2 className='text-2xl md:text-3xl lg:text-4xl font-light tracking-tight text-gray-400'>
-          Building advanced systems for tomorrow's challenges.
+          Building advanced systems for tomorrow&#39;s challenges.
         </h2>
       </div>
     </div>
