@@ -10,7 +10,7 @@ export function SparklesPreview() {
   return (
     <div className='h-[50rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md'>
       {/* Main Heading */}
-      <h1 className='text-6xl md:text-7xl xl:text-[20rem] font-medium tracking-tighter text-center text-white relative z-20'>
+      <h1 className='mt-20 md:mt-0 text-6xl md:text-7xl xl:text-[20rem] font-medium tracking-tighter text-center text-white relative z-20'>
         NexaFlow
       </h1>
 
