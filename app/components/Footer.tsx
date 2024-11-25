@@ -45,20 +45,20 @@ export function SparklesPreview() {
               id: '01',
               title: 'Products',
               links: [
-                { name: 'Products', href: '/products' },
-                { name: 'Solutions', href: '/solutions' },
-                { name: 'Pricing', href: '/pricing' },
-                { name: 'Enterprise', href: '/enterprise' },
+                { name: 'Products', href: '/' },
+                { name: 'Solutions', href: '/' },
+                { name: 'Pricing', href: '/' },
+                { name: 'Enterprise', href: '/' },
               ],
             },
             {
               id: '02',
               title: 'Company',
               links: [
-                { name: 'About', href: '/about' },
-                { name: 'Careers', href: '/careers' },
-                { name: 'Blog', href: '/blog' },
-                { name: 'Press', href: '/press' },
+                { name: 'About', href: '/' },
+                { name: 'Careers', href: '/' },
+                { name: 'Blog', href: '/' },
+                { name: 'Press', href: '/' },
               ],
             },
             {

@@ -11,7 +11,7 @@ const Navbar = () => {
         <ul className='flex space-x-8'>
           <li>
             <a
-              href='#'
+              href='/#mission'
               className='text-gray-300 hover:text-white text-sm transition-colors'
             >
               Our Mission

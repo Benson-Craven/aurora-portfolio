@@ -44,13 +44,15 @@ const ProductCard = ({
 
 const MissionSection = () => {
   return (
-    <div className='min-h-screen bg-black text-white p-8'>
-      <div className='h-[30vh]' />
-      <div className='max-w-7xl mx-auto space-y-16'>
+    <div id='mission' className='min-h-screen bg-black text-white p-4 sm:p-8'>
+      <div className='h-[20vh] sm:h-[30vh]' />
+      <div className='max-w-7xl mx-auto space-y-8 sm:space-y-16'>
         {/* Mission Statement */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-center'>
-          <h1 className='text-5xl font-medium tracking-tighter'>Our mission</h1>
-          <p className='text-xl text-gray-300 tracking-tight'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center'>
+          <h1 className='text-4xl sm:text-5xl font-medium tracking-tighter'>
+            Our mission
+          </h1>
+          <p className='text-lg sm:text-xl text-gray-300 tracking-tight'>
             Building next-generation AI solutions that are reliable, scalable,
             and accessible. Our suite of integrated products makes enterprise AI
             deployment simple and effective.
@@ -58,9 +60,9 @@ const MissionSection = () => {
         </div>
 
         {/* Product Cards Grid */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 place-items-center'>
           {/* Card 1: Authentication */}
-          <CardSpotlight className='h-96 w-96'>
+          <CardSpotlight className='h-[400px] w-full max-w-sm'>
             <p className='text-xl font-bold relative z-20 mt-2 text-white'>
               Secure Authentication
             </p>
@@ -80,7 +82,7 @@ const MissionSection = () => {
           </CardSpotlight>
 
           {/* Card 2: Analytics */}
-          <CardSpotlight className='h-96 w-96'>
+          <CardSpotlight className='h-[400px] w-full max-w-sm'>
             <p className='text-xl font-bold relative z-20 mt-2 text-white'>
               Advanced Analytics
             </p>
@@ -99,7 +101,7 @@ const MissionSection = () => {
           </CardSpotlight>
 
           {/* Card 3: Customer Support */}
-          <CardSpotlight className='h-96 w-96'>
+          <CardSpotlight className='h-[400px] w-full max-w-sm'>
             <p className='text-xl font-bold relative z-20 mt-2 text-white'>
               24/7 Customer Support
             </p>
@@ -119,7 +121,7 @@ const MissionSection = () => {
           </CardSpotlight>
         </div>
       </div>
-      <div className='h-[30vh]' />
+      <div className='h-[20vh] sm:h-[30vh]' />
     </div>
   )
 }
